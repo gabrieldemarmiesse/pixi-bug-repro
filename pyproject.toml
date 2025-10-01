@@ -1,0 +1,26 @@
+[project]
+name = "pixi-repro"
+version = "0.1.0"
+dependencies = [
+    "my-subdir",
+]
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[tool.pixi.pypi-dependencies]
+pixi-repro = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+hello = "echo hello"
+
+[tool.uv.sources]
+my-subdir = { path = "my_subdir" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pixi_repro"]
