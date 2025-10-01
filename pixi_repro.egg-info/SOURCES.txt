@@ -1,7 +1,0 @@
-pyproject.toml
-pixi_repro/__init__.py
-pixi_repro.egg-info/PKG-INFO
-pixi_repro.egg-info/SOURCES.txt
-pixi_repro.egg-info/dependency_links.txt
-pixi_repro.egg-info/requires.txt
-pixi_repro.egg-info/top_level.txt
